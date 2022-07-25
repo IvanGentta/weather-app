@@ -85,6 +85,9 @@ const Main = () => {
           layout="fill"
           className="object-cover"
         />
+        <div className="z-20">
+          <h1>Weather App</h1>
+        </div>
         <div className="relative flex justify-between items-center max-w-[500px] w-full m-auto pt-4 text-white z-10">
           <form
             onSubmit={fetchWeather}
@@ -95,7 +98,7 @@ const Main = () => {
                 onChange={(e) => setCity(e.target.value)}
                 className="bg-transparent border-none text-white focus:outline-none text-2xl"
                 type="text"
-                placeholder="Search"
+                placeholder="Search any city"
               />
             </div>
             <button onClick={fetchWeather}>
